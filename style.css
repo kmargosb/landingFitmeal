@@ -1,5 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --titulos: #212121;
+    --subtitulos: #707070;
+    --grey: #F3F3F3;
+    --orange: #FF5331;
+    --footer: #191919;
+    --white: #fff;
+    --black: #000;
+}
+
+/*----Header----*/
+
+header {
+    padding: 8px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--titulos);
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.links-nav {
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    color: var(--subtitulos);
+    text-decoration: none;
+}
+
+.links-nav:hover {
+    color: var(--orange);
+}
+
+.sign {
+    display: flex;
+    gap: 12px;
+}
+
+.btnOrange {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signIn {
+    color: var(--orange);
+    border: 2px outset var(--orange);
+    background-color: var(--white);
+}
+
+.signUp {
+    color: var(--white);
+    border: none;
+    background-color: var(--orange);
+}
+
+/*----MAIN----*/
+/*----PRINCIPAL----*/
+
+.parte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.title {
+    padding: 3rem 10rem 0 10rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.quality {
+    font-size: 1.1rem;
+    color: var(--subtitulos);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quality>img {
+    width: 24px;
+    height: 24px;
+}
+
+.title>h2 {
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title>h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title>p {
+    text-align: center;
+    color: var(--subtitulos);
+    font-size: 1.1rem;
+}
+
+.delivery-location {
+    width: 50%;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.enter-your {
+    width: 30%;
+    height: 2.5rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -17px 22px 37px  rgba(0, 0, 0, 0.272);
+}
+.enter-your:focus{
+    outline: none;
+}
+
+.img-repartidor {
+    width: 90%;
+    height: 70vh;
+    background-image: url(./assets/repartidor.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
